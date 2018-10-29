@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--All photos taken from https://www.w3schools.com/w3css/w3css_cards.asp</title>-->
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="scripts.js"></script>
+</head>
+
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <div class="topnav" style="width=100%">
+      <a href="home.html">Home</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="stories.html">Stories</a>
+      <a href="forum.html">Forum</a>
+      <a href="login.html" class="topnav_active">Login</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsive()">&#9776;</a>
+    </div>
+  </div>
+
+
+<form class="loginScreen">
+  <div class="imgcontainer">
+      <img src="img/portraits/img_avatar.png" alt="Avatar" class="avatar">
+  </div>
+  <div class="login_container">
+    <p><b>Username</b></p>
+    <input type="text" placeholder="Enter Username" name="uname">
+
+    <p><b>Password</b></p>
+    <input type="password" placeholder="Enter Password" name="psw">
+
+    <a href="create_account.html" type="button" class="login_button" style="text-align:center;float:center;" >Login</a>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me </input>
+    </label>
+  </div>
+  <div class="row_login">
+    <div class="col-50-left">
+      <span><a href="home.html">Create Account</a></span>
+    </div>
+    <div class="col-50-right">
+      <span><a href="home.html"> Forgot password?</a></span>
+    </div>
+  </div>
+</form>
+
+<div class="footer">
+  <p><a href="">About</a> | <a href="">Blog</a> | <a href="">Feedback</a> | <a href="">Sitemap</a></p>
+  <p>Peleliu Rights and Use Information (Updated 5/9/2013) | Privacy Policy (Updated 1/9/2014)</p>
+  <p>©2018 PELELIU</p>
+</div>
+
+<script>
+function responsive() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+
+</body>
+</html>

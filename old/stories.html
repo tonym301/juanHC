@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--All photos taken from https://www.w3schools.com/w3css/w3css_cards.asp</title>-->
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="scripts.js"></script>
+</head>
+
+
+<body>
+<div class="topnav" id="myTopnav">
+  <div class="topnav" style="width=100%">
+    <a href="home.html">Home</a>
+    <a href="timeline.html">Timeline</a>
+    <a href="stories.html" class="topnav_active">Stories</a>
+    <a href="forum.html">Forum</a>
+    <a href="login.html">Login</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsive()">&#9776;</a>
+  </div>
+</div>
+
+<div class="main">
+  <div class="main-content">
+
+    <!-- Stories Container -->
+    <br>
+    <br>
+    <h1 style="text-align:center"><b>The Untold Stories of the Heroes of Peleliu</b></h1>
+    <div class="storyWrapper">
+      <div class="row">
+        <div class="column">
+          <div class="portrait">
+            <img src="img/portraits/img_avatar.png" alt="Jane" style="width:100%">
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="story_container">
+              <h2>Mike Ross</h2>
+              <p class="title">Art Director</p>
+              <p>Mike Ross is an esteemed alumni of the Harver Law School. He is currently
+                 working full-time for the law firm Pearson Specter Litt. He specializes in
+                 corporate cases including fraud, collusion, and even espionage. Ross is the
+                 on track to becoming the youngest partner at his firm.</p>
+              <p><button class="button_contact">Read More</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="portrait">
+            <img src="img/portraits/img_avatar.png" alt="Jane" style="width:100%">
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="story_container">
+              <h2>Rodney Erickson</h2>
+              <p class="title">Marketing</p>
+              <p>Rodney Erickson is a content marketing professional at HubSpot, an inbound
+                 marketing and sales platform that helps companies attract visitors, convert
+                 leads, and close customers. Previously, Rodney worked as a marketing manager
+                 for a tech software startup.</p>
+              <p><button class="button_contact">Read More</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="portrait">
+            <img src="img/portraits/img_avatar.png" alt="Jane" style="width:100%">
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="story_container">
+              <h2>Michelle Obama</h2>
+              <p class="title">Marketing</p>
+              <p>Rodney Erickson is a content marketing professional at HubSpot, an inbound
+                 marketing and sales platform that helps companies attract visitors, convert
+                 leads, and close customers. Previously, Rodney worked as a marketing manager
+                 for a tech software startup.</p>
+              <p><button class="button_contact">Read More</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Stories Container -->
+
+  </div>
+  <div class="footer">
+    <p><a href="">About</a> | <a href="">Blog</a> | <a href="">Feedback</a> | <a href="">Sitemap</a></p>
+    <p>Peleliu Rights and Use Information (Updated 5/9/2013) | Privacy Policy (Updated 1/9/2014)</p>
+    <p>©2018 PELELIU</p>
+  </div>
+</div>
+
+<script>
+function responsive() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>

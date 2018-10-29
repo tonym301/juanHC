@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--All photos taken from https://www.w3schools.com/w3css/w3css_cards.asp</title>-->
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="scripts.js"></script>
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <div class="topnav" style="width=100%">
+      <a href="home.html">Home</a>
+      <a href="timeline.html" >Timeline</a>
+      <a href="stories.html">Stories</a>
+      <a href="forum.html">Forum</a>
+      <a href="login.html" class="topnav_active">Login</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsive()">&#9776;</a>
+    </div>
+  </div>
+  <div class="page_row">
+    <h1 style="text-align:left">Complete Your Accont by Filling in the Following...</h1>
+    <div class="col-25">
+      <div class="profile_column">
+        <div class="profile_card">
+          <img src="img/portraits/img_avatar.png" alt="profile" style="width:100%">
+          <h1>Profile Picture</h1>
+          <div style="margin: 24px 0; padding-bottom: 10px;">
+            <img src="img/Icons/facebook.png" alt="facebook" style="width:15%">
+            <img src="img/Icons/twitter.png" alt="twitter" style="width:15%">
+            <img src="img/Icons/google.png" alt="google" style="width:15%">
+            <img src="img/Icons/linkedin.png" alt="linkedin" style="width:15%">
+          </div>
+          <p><button>Upload Photo</button></p>
+        </div>
+      </div>
+    </div>
+    <!-- End Left Column -->
+
+    <!-- Right Column -->
+    <div class="col-75">
+      <div class="profile_column">
+        <div class="profile_container">
+          <form autocomplete="off" action="/action_page.php">
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">First Name*</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="First name..">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Last Name*</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Last name..">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="occupation">Date of Birth</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="occupation" name="occupation" placeholder="Born on..">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="occupation">Occupation</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="occupation" name="occupation" placeholder="Occupation..">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="phone">Phone Number</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="phone" name="phone" placeholder="+1 (###) ###-####">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                Email Address*
+              </div>
+              <div class="col-75">
+                <div class="autocomplete" style="width:100%;">
+                  <input id="myInput" type="text" name="myCountry" placeholder="Address..">
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Background</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              </div>
+            </div>
+
+            <div class="row">
+              <a href="profile.html" type="button" class="login_button" style="text-align:center;width:30%;float:right;" >Submit</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p><a href="">About</a> | <a href="">Blog</a> | <a href="">Feedback</a> | <a href="">Sitemap</a></p>
+    <p>Peleliu Rights and Use Information (Updated 5/9/2013) | Privacy Policy (Updated 1/9/2014)</p>
+    <p>©2018 PELELIU</p>
+  </div>
+
+
+  <script>
+  function responsive() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+  }
+  </script>
+
+</body>
+</html>

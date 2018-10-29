@@ -1,0 +1,10 @@
+Options -Indexes
+
+RewriteEngine on
+
+# ErrorDocument 404 /error.php
+
+RewriteRule ^$ app/controller/siteController.php?action=home [QSA,L]
+RewriteRule ^platform$ app/controller/siteController.php?action=platform [QSA,L]
+RewriteRule ^about$ app/controller/siteController.php?action=about [QSA,L]
+RewriteRule ^support$ app/controller/siteController.php?action=support [QSA,L]

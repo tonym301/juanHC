@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--All photos taken from https://www.w3schools.com/w3css/w3css_cards.asp</title>-->
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="scripts.js"></script>
+</head>
+
+
+<body>
+<div class="topnav" id="myTopnav">
+  <div class="topnav" style="width=100%">
+    <a href="home.html">Home</a>
+    <a href="timeline.html" class="topnav_active">Timeline</a>
+    <a href="stories.html">Stories</a>
+    <a href="forum.html">Forum</a>
+    <a href="login.html">Login</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsive()">&#9776;</a>
+  </div>
+</div>
+
+<div class="main">
+  <!-- container -->
+
+  <div class="main-content">
+    <br>
+    <h1 style="text-align: left;margin-left:7%;">Timeline of Events</h1>
+    <div class="timeline">
+      <div class="tl_container tl_right">
+        <div class="tl_content">
+          <h2>September 4th, 1944</h2>
+          <p>On the 4th September, the Marines left their bases at Pavauu. Before they arrived the U.S. Navy bombarded Peleliu with their battleships and cruisers. In addition to this, light aircraft carriers also supported the bombardment. Aside from the Japanese aircraft that were wiped out, the bombardment did not have that much impact.
+        </div>
+      </div>
+      <div class="tl_container tl_right">
+        <div class="tl_content">
+          <h2>September 15th, 1944</h2>
+          <p>On the 15th September, the U.S. Marines arrived at Peleliu. Thousands of Marines flooded ashore the beaches of Peleliu. A total of some 17,500 Marines were sent to take Peleliu.
+        </div>
+      </div>
+      <div class="tl_container tl_right">
+        <div class="tl_content">
+          <h2>September 16th, 1944</h2>
+          <p>On the second day of the battle, the Marines stormed towards the airfield at Peleliu. Despite the Japanese artillery and pillboxes the airfield was taken and held during this period. Aircraft soon began to land at the airfield during this period to provide the Marines with further aerial reconnaissance. By the 26th September, F4U Corsairs began to land at the airstrip for further dive-bombing missions around Peleliu.
+        </div>
+      </div>
+      <div class="tl_container tl_right">
+        <div class="tl_content">
+          <h2>September 28th, 1944</h2>
+          <p>The next target for the Marines was Ngesebus Island which was a hotbed for Japanese artillery. The Marines were supported by Corsairs which dropped their bombs and rockets on Japanese positions around Ngesebus. Several days would be required to defeat the Japanese positions around Ngesebus.
+        </div>
+      </div>
+      <div class="tl_container tl_right">
+        <div class="tl_content">
+          <h2>October 15th, 1944</h2>
+          <p>On the 15th October, the 81st Infantry Division arrived to reinforce the Marines. By now the Marines were in action on the ridges of Umurbrogol. It was here that many of the Japanese fortifications had been established within the mountain's mine shafts with mortars, artillery pieces and machines guns. The Battle of Peleliu continued for a number weeks at the Mount Umurbrogol before the the U.S. troops were able to secure Umurbrogol.
+        </div>
+      </div>
+      <div class="tl_container tl_right">
+        <div class="tl_content">
+          <h2>November 27th, 1944</h2>
+          <p>The Battle of Peleliu was effectively over on the 27th November. After more than a month, Peleliu was secured by the U.S. Marines and 81st Infantry Division. They had lost approximately 1,794 troops during the battle.
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- END Container -->
+
+  </div>
+  <div class="footer">
+    <p><a href="">About</a> | <a href="">Blog</a> | <a href="">Feedback</a> | <a href="">Sitemap</a></p>
+    <p>Peleliu Rights and Use Information (Updated 5/9/2013) | Privacy Policy (Updated 1/9/2014)</p>
+    <p>©2018 PELELIU</p>
+  </div>
+</div>
+
+<script>
+function responsive() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>

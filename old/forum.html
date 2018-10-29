@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--All photos taken from https://www.w3schools.com/w3css/w3css_cards.asp</title>-->
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="scripts.js"></script>
+</head>
+
+
+<body>
+<div class="topnav" id="myTopnav">
+  <div class="topnav" style="width=100%">
+    <a href="home.html">Home</a>
+    <a href="timeline.html">Timeline</a>
+    <a href="stories.html">Stories</a>
+    <a href="forum.html" class="topnav_active">Forum</a>
+    <a href="login.html">Login</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsive()">&#9776;</a>
+  </div>
+</div>
+
+<div class="main">
+  <!-- container -->
+
+  <div class="main-content">
+    <br>
+    <h1 style="text-align: left;margin-left:7%;">Forum Discussion</h1>
+    <ul class="breadcrumb">
+      <li>Discussion Topics</li>
+    </ul>
+    <div class="row_forum" >
+      <div class="col-15" style="text-align:center;border-right: double;margin-top:0;margin-right:7px; width:13%">
+        <div class="posts">4</div>
+        <p>Responses</p>
+      </div>
+      <div class="col-85" >
+        <h3 style="margin-left:20px;margin-top:8px;">What would have happened if the Japanese had Nukes?</h3>
+        <p  style="margin-left:20px;margin-top:8px;">July 25th, 2017</p>
+      </div>
+    </div>
+    <div class="row_forum" >
+      <div class="col-15" style="text-align:center;border-right: double;margin-top:0;margin-right:7px; width:13%">
+        <div class="posts">4</div>
+        <p>Responses</p>
+      </div>
+      <div class="col-85" >
+        <h3 style="margin-left:20px;margin-top:8px;">What would have happened if the Japanese had Nukes?</h3>
+        <p  style="margin-left:20px;margin-top:8px;">July 25th, 2017</p>
+      </div>
+    </div>
+    <div class="row_forum" >
+      <div class="col-15" style="text-align:center;border-right: double;margin-top:0;margin-right:7px; width:13%">
+        <div class="posts">4</div>
+        <p>Responses</p>
+      </div>
+      <div class="col-85" >
+        <h3 style="margin-left:20px;margin-top:8px;">What would have happened if the Japanese had Nukes?</h3>
+        <p  style="margin-left:20px;margin-top:8px;">July 25th, 2017</p>
+      </div>
+    </div>
+    <!-- END Container -->
+
+  </div>
+  <div class="footer">
+    <p><a href="">About</a> | <a href="">Blog</a> | <a href="">Feedback</a> | <a href="">Sitemap</a></p>
+    <p>Peleliu Rights and Use Information (Updated 5/9/2013) | Privacy Policy (Updated 1/9/2014)</p>
+    <p>©2018 PELELIU</p>
+  </div>
+</div>
+
+<script>
+function responsive() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>
