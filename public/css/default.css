@@ -585,3 +585,8 @@ ul.contact li a.icon-rss:before
 	width: 800px;
 	height: 500px;
 }
+
+
+@media all and (max-width: 420px) {
+  
+}
