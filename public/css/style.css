@@ -1,57 +1,600 @@
-/* ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #000000;
+
+html, body
+{
+	height: 100%;
 }
 
-li {
-    display:inline;
-    width: 150px;
+body
+{
+	margin: 0px;
+	padding: 0px;
+	/* background: #2b2b2b; */
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 11pt;
+	font-weight: 300;
+	/* color: #6c6c6c; */
 }
 
-li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-} */
-
-/* Change the link color to #111 (black) on hover */
-/* li a:hover {
-    background-color: #CF4520;
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+	color: #FFF;
 }
 
-.active {
-    background-color: #6A2C3E;
+p, ol, ul
+{
+	margin-top: 0;
+	color: #FFF;
 }
 
-.footer {
-  text-align: center;
-  color: white;
+ol, ul
+{
+	padding: 0;
+	list-style: none;
 }
 
-.nav{
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
+p
+{
+	line-height: 180%;
+	font-size: 1.3em;
 }
 
-.paper-back {
-  margin: auto;
-  width: 80%;
-  height: 1500px;
-  /*  */
-  /* background-color: white;
-  /* background-image: url('../img/ribbon.jpg'); */
-} */
+strong
+{
+}
+
+a
+{
+	color: #2C383B;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+.container
+{
+	margin: 0px auto;
+	width: 1200px;
+}
+
+.container-not-home
+{
+	margin: 0px auto;
+	width: 1200px;
+	padding: 0em 0em 4em 0em;
+	background: #343C53 no-repeat center;
+}
+
+.container-contact
+{
+	margin: 0px auto;
+	width: 62vw;
+	height: 60vh;
+	padding: 3em 1em 6em 1em;
+	text-align: center;
+	background: #630031 no-repeat center;
+}
+
+
+.maroon {
+	background-color: #630031;
+	padding: 1em 1em 1em 1em;
+}
+
+/*********************************************************************************/
+/* Contact style                                                                  */
+/*********************************************************************************/
+
+#contact-juan-h3 {
+	color: #ff7b00;
+	font-size: 3em;
+}
+
+#contact-juan-h2 {
+	color: #FFF;
+	font-size: 2.5em;
+}
+
+.HC-link {
+	text-decoration: none;
+	color: #ff7b00;
+}
+
+.here-link {
+	text-decoration: none;
+	color: #ffa538;
+}
+
+/*********************************************************************************/
+/* Image Style                                                                   */
+/*********************************************************************************/
+
+.image
+{
+	display: inline-block;
+	background: #2b2b2b;
+}
+
+.image img
+{
+	display: block;
+	width: 100%;
+}
+
+
+.image-centered
+{
+	display: block;
+	margin: 0 0 2em 0;
+}
+
+.image-centered img
+{
+	margin: 0 auto;
+	width: auto;
+}
+
+.shirtdesign {
+	width:400px;
+  height:550px;
+	padding: 0em 2em .5em 0em
+}
+
+.about-pic {
+	width:700px;
+  height:450px;
+	padding-left: 20%;
+	padding-right: 25%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+
+/*********************************************************************************/
+/* Social Icon Styles                                                            */
+/*********************************************************************************/
+
+	ul.contact
+{
+	margin: 0;
+	padding: 2em 0em 0em 0em;
+	list-style: none;
+}
+
+ul.contact li
+{
+	display: inline-block;
+	padding: 0em 0.30em;
+	font-size: 1em;
+}
+
+ul.contact li span
+{
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.contact li a
+{
+	color: #FFF;
+}
+
+ul.contact li a:before
+{
+	display: inline-block;
+	background: #3f3f3f;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 20px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+ul.contact li a.icon-twitter:before
+{
+	background: #2DAAE4;
+}
+
+ul.contact li a.icon-facebook:before
+{
+	background: #39599F;
+}
+
+ul.contact li a.icon-dribbble:before
+{
+	background: #C4376B;
+}
+
+ul.contact li a.icon-tumblr:before
+{
+	background: #31516A;
+}
+
+ul.contact li a.icon-rss:before
+{
+	background: #F2600B;
+}
+
+
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+
+	.title
+{
+	margin-bottom: 3em;
+}
+
+.title h2
+{
+	font-weight: 400;
+	font-size: 2.8em;
+	color: #FFF;
+}
+
+.title .byline
+{
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.1em;
+	color: #FFF;
+}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+#header-wrapper
+{
+	background: #343C53 no-repeat center;
+	background-size: auto 100%;
+}
+
+#header
+{
+	position: relative;
+}
+
+#header-featured
+{
+	padding: 8em 0em 2em 0em;
+}
+
+
+#shirt-banner {
+	height: 50%;
+	width: 50%;
+}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+#logo
+{
+	position: absolute;
+	top: 2em;
+	width: 100%;
+}
+
+#logo h1
+{
+	display: inline-block;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #ff7b00;
+	padding-right: 0.50em;
+	border-right: 1px solid rgba(0,0,0,0);
+}
+
+
+
+#logo a
+{
+	text-decoration: none;
+	color: #ff7b00;
+}
+
+#logo .fa
+{
+	color: #F2762E;
+}
+
+#logo .fa:after
+{
+	position: absolute;
+	display: inline-block;
+	padding-right: 2em;
+}
+
+#logo .juan-title {
+	color: #FFF;
+	font-size: 1.50em;
+}
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+#menu
+{
+	position: absolute;
+	right: 0;
+	top: 2em;
+}
+
+#menu ul
+{
+	display: inline-block;
+}
+
+#menu li
+{
+	display: block;
+	float: left;
+	text-align: center;
+}
+
+#menu li a, #menu li span
+{
+	display: inline-block;
+	margin-left: 1px;
+	padding: 1em 1.5em 1em 1.5em;
+	letter-spacing: 0.10em;
+	text-decoration: none;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	outline: 0;
+	color: #FFF;
+}
+
+#menu li:hover a, #menu li.active a, #menu li.active span
+{
+}
+
+#menu .current_page_item a
+{
+	background: #ff7b00;
+	border-radius: 60px;
+	color: #FFF;
+}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+
+#banner
+{
+	overflow: hidden;
+	width: 1000px;
+	text-align: center;
+	color: rgba(255,255,255,.7);
+	font-size: 1.5em;
+}
+
+#banner a
+{
+	color: rgba(255,255,255,.9);
+}
+
+#banner h2
+{
+	padding-bottom: 0.50em;
+	font-weight: 400;
+	font-size: 3em;
+	color: #FFF;
+}
+
+#banner .button
+{
+	margin-top: 2em;
+	border-radius: 50px;
+}
+
+#banner strong
+{
+	color: #FFF;
+}
+
+#banner span
+{
+	display: block;
+	padding-top: 0.20em;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	color: #A2A2A2;
+}
+
+/*********************************************************************************/
+/* Page                                                                          */
+/*********************************************************************************/
+
+#wrapper
+{
+	 background-image: url("../img/background.jpg");
+}
+
+#page
+{
+	overflow: hidden;
+	padding: 3em 0em 1em 0em;
+	background: #767988;
+}
+
+#page .button
+{
+	margin-top: 2em;
+}
+
+/*********************************************************************************/
+/* Content                                                                       */
+/*********************************************************************************/
+
+	#content
+	{
+		border: none;
+    display: block;
+    margin: 0 auto;
+		width: 700px;
+	}
+
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+#copyright
+{
+	overflow: hidden;
+	padding: 6em 0em 10em 0em;
+	border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+#copyright p
+{
+	letter-spacing: 0.20em;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	color: rgba(255,255,255,0.3);
+}
+
+#copyright a
+{
+	text-decoration: none;
+	color: rgba(255,255,255,0.6);
+}
+
+/*********************************************************************************/
+/* Featured                                                                      */
+/*********************************************************************************/
+
+#featured-wrapper
+{
+	overflow: hidden;
+	padding: 10em 0em;
+	background: #FFF;
+	text-align: center;
+}
+
+#featured
+{
+	overflow: hidden;
+}
+
+#featured .main-title
+{
+	margin-bottom: 4em;
+}
+
+#featured .main-title h2
+{
+	font-size: 4em;
+}
+
+#featured .main-title .byline
+{
+	font-size: 2em;
+}
+
+#featured-wrapper .fa
+{
+	display: inline-block;
+	margin-bottom: 1em;
+	width: 3em;
+	height: 3em;
+	line-height: 3em;
+	font-size: 4em;
+	color: #FFF;
+	background: #F2762E;
+	border: 1px solid #F2762E;
+	border-radius: 50%;
+}
+
+
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+
+#footer {
+		text-align: center;
+}
+
+#footer-wrapper
+{
+	overflow: hidden;
+	padding: 7em 0em;
+	color: rgba(255,255,255,0.5);
+}
+
+
+#footer .title h2
+{
+	font-size: 2em;
+	font-weight: 300;
+	color: #FFF;
+}
+
+#footer .title .byline
+{
+	display: block;
+	padding-top: 1em;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	color: rgba(255,255,255,0.5);
+}
+
+#footer .column1,
+#footer .column2
+{
+	width: 560px;
+}
+
+#footer .column1
+{
+	float: left;
+}
+
+#footer .column2
+{
+	float: right;
+}
+
+#footer .button
+{
+	margin-top: 2em;
+}
+
+/*********************************************************************************/
+/* youtube video                                                                       */
+/*********************************************************************************/
+
+
+.yt-video {
+	width: 800px;
+	height: 500px;
+}
+
+
+@media all and (max-width: 420px) {
+
+}
+
 
 
 /* Background hokie stone */
 body {
     background-image: url("../img/background.jpg");
     background-attachment: fixed;
-} */
+}
