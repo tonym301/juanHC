@@ -16,7 +16,7 @@
     <div id="header-featured">
   		<div class="container-contact">
         <h2 id="contact-juan-h2">VOTE<h2>
-        <h3 id="contact-juan-h3"><a href="https://vt.edu/homecoming/court.html" class="HC-link" title="VT Homecoming Website">https://vt.edu/homecoming/court.html</a> </h3>
+        <h3 id="contact-juan-h3"><a href="https://gobblerconnect.vt.edu/" class="HC-link" title="VT Homecoming Website">https://gobblerconnect.vt.edu/</a> </h3>
       </br>
       </br>
         <h2 id="contact-juan-h2"> Contact Juan Segura </h2>
